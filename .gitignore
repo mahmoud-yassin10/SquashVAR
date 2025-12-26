@@ -3,10 +3,13 @@
 *.avi
 *.mov
 *.mkv
-*.png
 *.jpg
 *.jpeg
 *.webp
+# Allow only figure PNGs
+!figs/**/*.png
+# But still block qualitative extracted frames if you use a pattern:
+figs/qual_*.png
 
 # --- Datasets / raw data ---
 data/
