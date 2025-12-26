@@ -1,0 +1,3 @@
+mode,TP,FP,FN,P,R,F1,notes
+surface-aware,41,10,37,0.804,0.526,0.636,front F1=0.847; floor=0.571; left=0.267; right=0.000
+surface-agnostic,47,4,31,0.922,0.603,0.729,±25-frame tolerance; N=78 GT impacts

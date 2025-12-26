@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # --- Never commit large media ---
 *.mp4
 *.avi
@@ -57,3 +58,63 @@ runs/**/confusion_matrix*.png
 
 # --- Keep weights at root (you said yes) ---
 !*.pt
+=======
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ---- Python ----
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# ---- Data / datasets (do NOT push) ----
+data/
+datasets/
+**/images/
+**/videos/
+**/*.mp4
+**/*.avi
+**/*.mov
+**/*.mkv
+
+# ---- Ultralytics / cache / temp ----
+.ultralytics/
+ultra_cfg/
+tmp/
+label_preview/
+
+# ---- Runs: ignore everything by default ----
+runs/**
+
+# ---- Runs: allow specific useful artifacts ----
+!runs/**/results*.png
+!runs/**/results*.csv
+!runs/**/*curve.png
+!runs/**/confusion_matrix*.png
+
+# If you want to keep impact/world CSVs too, uncomment these:
+!runs/**/world_multi*.csv
+!runs/**/impacts*.csv
+
+# If you want to keep overlay images only (not videos), keep these:
+!runs/**/overlay*.png
+
+# Block any run-generated labels/preds explicitly
+runs/**/labels/
+runs/**/predictions/
+runs/**/val_batch*.jpg
+runs/**/train_batch*.jpg
+
+# ---- Large model files: allow only .pt (weights) ----
+*.onnx
+*.engine
+*.tflite
+*.mlmodel
+*.pth
+*.ckpt
+>>>>>>> 60eab2f (Initial commit)

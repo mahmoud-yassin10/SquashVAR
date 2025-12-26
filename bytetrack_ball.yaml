@@ -1,0 +1,17 @@
+# ByteTrack (ball-tuned)
+tracker_type: bytetrack
+
+# thresholds (relaxed to reduce dropouts)
+track_high_thresh: 0.35
+track_low_thresh:  0.05
+new_track_thresh:  0.25
+match_thresh:      0.80
+
+# required by current Ultralytics
+fuse_score: True
+
+# other common knobs
+track_buffer: 30
+min_box_area: 5
+mot20: False
+frame_rate: 60
